@@ -13,6 +13,8 @@ body {
   font-size: 16px;
 }
 
+/* Code for the Header aka Section 1 */
+
 .header, .hero, .work {
   box-sizing: border-box;
 }
@@ -54,19 +56,34 @@ hr {
   border-top: 1px solid #7d97ad;
 }
 
-.hero {
-  background-color: white;
-}
+/* Code for the Image aka Section 2 */
 
-.hero_image {
+.hero_image_small, .hero_image_large {
   width: 100%;
 }
 
+/* Code for the Work Portfolio aka Section 3 */
+
 .work {
   background-color: red;
-  height: 33%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+  /* float: left; */
 }
 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 30%;
+}
+
+.projects img {
+  overflow: hidden;
+}
+
+
+/* Code to add responsiveness */
 
 @media screen and (max-width: 580px) {
   .header_title h1 {
@@ -75,6 +92,10 @@ hr {
 
   .header_title h2 {
     width: 70%;
+  }
+
+  .hero_image_large {
+    display: none;
   }
 
 }
@@ -94,6 +115,14 @@ hr {
 
   .header_title {
     width: calc(100% - 800px -2em);
+  }
+
+  .hero_image_small {
+    display: none;
+  }
+
+  .hero_image_large {
+    display: block;
   }
 
   h1 {
