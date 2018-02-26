@@ -65,32 +65,42 @@ hr {
 /* Code for the Work Portfolio aka Section 3 */
 
 .work {
-  background-color: red;
+  /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
-  padding: 1em;
-  /* float: left; */
+  padding: 1em 0;
+  text-align: center;
 }
 
 .projects {
-  display: flex;
-  flex-wrap: wrap;
-  width: 30%;
+  padding: 0 2em;
 }
 
-.projects img {
-  overflow: hidden;
+
+.project_image {
+  width: 100%;
 }
 
+.project_links {
+  text-decoration: none;
+  color: #2d3c49;
+  font-size: 14px;
+}
+
+.footer {
+  margin: 1em 0.5em 0 0;
+  text-align: right;
+}
 
 /* Code to add responsiveness */
 
 @media screen and (max-width: 580px) {
-  .header_title h1 {
+
+  .header_title .title_name {
     display: none;
   }
 
-  .header_title h2 {
+  .header_title .title_pitch {
     width: 70%;
   }
 
@@ -98,15 +108,22 @@ hr {
     display: none;
   }
 
-}
+  .projects:first-of-type {
+    margin-bottom: 1em;
+  }
 
+  .projects:last-of-type {
+    margin-top: 1em;
+  }
+
+}
 
 
 @media screen and (min-width: 581px) {
 
   .header {
     padding: 2em;
-    height:calc(95px + 2em);
+    height: calc(95px + 2em);
   }
 
   .header_logo {
@@ -135,6 +152,24 @@ hr {
     font-weight: 200;
   }
 
+  .work {
+    padding: 1em;
+  }
+
+  .projects {
+    width: calc((100% - 2em) / 3);
+    padding: 0;
+    /* min-width: calc((550px - 2em) / 3); */
+    }
+
+  .projects:first-of-type {
+    margin-right: 1em;
+  }
+
+  .projects:last-of-type {
+    margin-left: 1em;
+  }
+
 }
 
 @media screen and (min-width: 850px) {
@@ -146,5 +181,9 @@ hr {
   .header {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .work {
+    padding: 1em 0;
   }
 }
