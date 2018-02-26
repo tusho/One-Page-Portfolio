@@ -72,6 +72,13 @@ hr {
   text-align: center;
 }
 
+.work_header {
+  width: 100%;
+  padding: 0 0 0.5em 1.3em;
+  text-align: left;
+  font-weight: 300;
+}
+
 .projects {
   padding: 0 2em;
 }
@@ -88,8 +95,12 @@ hr {
 }
 
 .footer {
-  margin: 1em 0.5em 0 0;
+  margin: 1em 0.5em 0.5em 0;
   text-align: right;
+}
+
+p {
+  font-size: 10px;
 }
 
 /* Code to add responsiveness */
@@ -154,6 +165,10 @@ hr {
 
   .work {
     padding: 1em;
+  }
+
+  .work_header {
+      padding: 0 0 0.5em 0em;
   }
 
   .projects {
