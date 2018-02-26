@@ -65,7 +65,6 @@ hr {
 /* Code for the Work Portfolio aka Section 3 */
 
 .work {
-  /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
   padding: 1em 0;
@@ -74,7 +73,6 @@ hr {
 
 .work_header {
   width: 100%;
-  padding: 0 0 0.5em 1.3em;
   text-align: left;
   font-weight: 300;
 }
@@ -107,16 +105,27 @@ p {
 
 @media screen and (max-width: 580px) {
 
+  .header {
+    height: 60px;
+  }
+
   .header_title .title_name {
-    display: none;
+    margin-top: 0.5em;
+    font-size: 16px;
   }
 
   .header_title .title_pitch {
-    width: 70%;
+    font-size: 16px;
   }
 
   .hero_image_large {
     display: none;
+  }
+
+  .work_header {
+    font-size: 20px;
+    color: #7d97ad;
+    padding: 0 0 0.2em 1.55em;
   }
 
   .projects:first-of-type {
@@ -127,13 +136,22 @@ p {
     margin-top: 1em;
   }
 
+  .project_name {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .project_links {
+    font-size: 12px;
+  }
+
 }
 
 
 @media screen and (min-width: 581px) {
 
   .header {
-    padding: 2em;
+    padding: 20px 2em 20px 2em;
     height: calc(95px + 2em);
   }
 
@@ -168,13 +186,12 @@ p {
   }
 
   .work_header {
-      padding: 0 0 0.5em 0em;
+      padding: 0 0 8px 0;
   }
 
   .projects {
     width: calc((100% - 2em) / 3);
     padding: 0;
-    /* min-width: calc((550px - 2em) / 3); */
     }
 
   .projects:first-of-type {
