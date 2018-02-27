@@ -31,6 +31,8 @@ h1, h2, h3, p {
 }
 
 .header_inner {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -40,20 +42,16 @@ h1, h2, h3, p {
 }
 
 .header_title {
-  max-width:calc(100% - 50px);
-  display: inline-block;
-  float: right;
+  margin-left: auto;
+  text-align: right;
 }
 
 .header_title h1, h2 {
   text-transform: uppercase;
-  float: right;
-  clear: both;
-  display: block;
 }
 
 hr {
-  border-top: 1px solid #7d97ad;
+  border: 1px solid #7d97ad;
 }
 
 /* Code for the Image aka Section 2 */
@@ -100,6 +98,7 @@ hr {
 p {
   font-size: 10px;
 }
+
 
 /* Code to add responsiveness */
 
@@ -151,16 +150,12 @@ p {
 @media screen and (min-width: 581px) {
 
   .header {
-    padding: 20px 2em 20px 2em;
+    padding: 20px 1em 20px 1em;
     height: calc(95px + 2em);
   }
 
   .header_logo {
     height: 80px;
-  }
-
-  .header_title {
-    width: calc(100% - 800px -2em);
   }
 
   .hero_image_small {
